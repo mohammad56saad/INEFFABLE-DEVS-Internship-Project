@@ -1,1 +1,59 @@
+/* Variables */
+:root {
+    --primary : gray;
+}
+
+/* reset  */
+body,p,a,ul,li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* base styles  */
+body {
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+/* Mobile Styles  */
+.site-nav{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.site-nav ul li:nth-child(-n+4){
+    display: none;
+}
+.site-nav img{
+    grid-column: 1/3;
+}
+.site-nav ul{
+    display: flex;
+    grid-column: 6/9;
+    align-items: center;
+}
+
+.site-nav ul li{
+    padding-left: 10px;
+}
+.site-nav a {
+    color: var(--primary);
+}
+
+.top{
+    background-image: url(assests/top-section_2180x750.jpg);
+    background-size: cover;
+    color: white;
+}
+
+
+
 
