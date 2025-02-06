@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --primary : gray;
+    --primary : rgb(82, 82, 82);
 }
 
 /* reset  */
@@ -17,6 +17,12 @@ li{
 /* base styles  */
 body {
     font-family: sans-serif;
+    color: var(--primary);    
+    overflow-x: hidden;
+}
+
+h1,h2 {
+    font-weight: normal;
 }
 
 .grid {
@@ -24,10 +30,11 @@ body {
     grid-template-columns: repeat(8, 1fr);
 }
 
+
 /* Mobile Styles  */
 .site-nav{
     padding: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
 }
 .site-nav ul li:nth-child(-n+4){
     display: none;
@@ -49,10 +56,253 @@ body {
 }
 
 .top{
+    padding: 40px 20px;
     background-image: url(assests/top-section_2180x750.jpg);
     background-size: cover;
+    background-position: center;
+    font-size: 0.8em;
+    color: white;
+    text-align: center;
+}
+
+.top p{
+    padding-bottom: 30px;
+}
+
+.top a{
+    color: white;
+    padding: 20px 40px;
+    background-color: rgb(58, 74, 181);
+}
+
+#portfolio{
+    padding: 20px;
+}
+
+#portfolio h1{
+    text-align: center;
+}
+
+.portfolio li{
+    grid-column: span 8;
+    padding: 20px;
+}
+
+.portfolio li:nth-child(odd) .first{
+    padding: 1px;
+    border: 1px solid gray;
+}
+
+.portfolio div{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio li div:last-child{
+    background-color: rgb(214, 212, 212);
+    color: black;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.price{
+    width: 20px;
+    height: 20px;
+}
+
+.analytics{
+    font-size: 10px;
+}
+
+.portfolio li p{
+    text-align: left;
+}
+
+
+#features{
+    padding: 20px;
+}
+#features h1{
+    text-align: center;
+    color: gray;
+}
+
+.features li img{
+    border: 2px solid rgba(82, 82, 82, 0.2);
+    padding: 5px 5%;
+    max-width: 95%;
+}
+
+.features li{
+    grid-column: span 8;
+    padding: 10px 0px;
+    max-width: 60%;
+    margin: 0px 20%;
+    text-align: center;
+}
+
+#benefits{
+    padding: 20px;
+}
+
+#benefits h1{
+    text-align: center;
+}
+
+.benefits li{
+    padding: 30px 0px;
+    grid-column: span 8;
+    display: flex;
+    grid-gap: 20px;
+    text-align: center;
+}
+
+
+.benefits li img{
+    max-width: 88px;
+    max-height: 88px;
+    margin-top: 20px;
+}
+
+#benefits h1,h2{
+    color: rgba(0,0,0,0.8);
+} 
+
+#collection{
+    padding: 20px;
+}
+
+#collection h1,p{
+    text-align: center;
+}
+
+.collection h2{
+    grid-column: span 8;
+}
+
+.collection h2:first-child{
+    padding: 85px;
+    background-image: url(assests/collection-startup_920x368.png);
+    background-size: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+    text-align: center;
     color: white;
 }
+
+.collection h2:last-child{
+    padding: 85px;
+    background-image: url(assests/collection-ml_922x368.png);
+    background-size: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+#moreinfo{
+    padding: 40px 20px;
+    background-color: rgba(214, 212, 212, 0.3);
+}
+
+#moreinfo h1{
+    text-align: center;
+}
+
+.moreinfo-img img{
+    grid-column: span 4;
+    padding: 20px 0px;
+}
+
+.moreinfo-text{
+    display: flex;
+    justify-content: center;
+}
+
+.moreinfo-text a{
+    color: rgb(4, 146, 235);
+    padding-left: 4px;
+    padding-top: 10px;
+}
+
+#contact{
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#contact h1{
+    color: rgba(0,0,0,0.8);
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.form input,p{
+    padding: 12px 5px;
+}
+
+.form input{
+    min-width: 70%;
+    color: rgb(183, 181, 181);
+}
+
+.form p{
+    color: white;
+    background-color: rgb(1, 110, 178);
+}
+
+#Splatforms{
+    padding: 40px 20px;
+    background-color: rgba(214, 212, 212, 0.3);
+}
+
+#Splatforms h1{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.Splatforms{
+    padding: 10px 0px;
+}
+
+.Splatforms img{
+    grid-column: span 4;
+    padding: 10px 20%;
+}
+
+footer{
+    padding: 0px 20px;
+    background: linear-gradient(to bottom , rgb(40, 40, 40) 50%, black 50%);
+}
+
+footer a{
+    color: rgb(4, 146, 235);
+}
+
+.links a img{
+    max-width: 15px;
+    max-height: 15px;
+}
+
+.links{
+    font-size: 12px;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+}
+
+.links a{
+    padding: 0px 3px;
+}
+
+
+
+
+
+
+
 
 
 
