@@ -382,7 +382,27 @@ footer a {
     .top h1{
         padding-top: 90px;
     }
-    
+
+    .portfolio {
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .portfolio li{
+        grid-column: span 3;
+    }
+
+    .features li{
+        grid-column: span 4;
+    }
+
+    .features li:last-child{
+        grid-column: 3/7;
+    }
+
+    .benefits li {
+        padding: 30px 60px;
+    }
+
 }
 
 /* Large laptops and Desktops */
