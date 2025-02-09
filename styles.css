@@ -350,7 +350,40 @@ footer a {
 }
 
 /* Large tablets and laptops */
-@media screen and (min-width: 960px) {}
+@media screen and (min-width: 960px) {
+    .site-nav ul li:nth-child(-n+4){
+        display: flex;
+    }
+
+    .site-nav ul li select{
+        border: none;
+        color: rgb(4, 146, 235);
+    }
+
+    .site-nav ul {
+        display: flex;
+        grid-column: 3/9;
+        align-items: center;
+    }
+
+    .site-nav ul li:nth-child(1){
+        margin-left: 20px;
+    }
+
+    .site-nav ul li:nth-child(4){
+        margin-left: auto;
+    }
+
+    .top{
+        padding-bottom: 140px;
+        background-size: 160%;
+    }
+
+    .top h1{
+        padding-top: 90px;
+    }
+    
+}
 
 /* Large laptops and Desktops */
 @media  screen and (min-width: 1200px) {
