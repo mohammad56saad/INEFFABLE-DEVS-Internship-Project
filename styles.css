@@ -1,27 +1,32 @@
 /* Variables */
 :root {
-    --primary : rgb(82, 82, 82);
+    --primary: rgb(82, 82, 82);
 }
 
 /* reset  */
-body,p,a,ul,li {
+body,
+p,
+a,
+ul,
+li {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
 /* base styles  */
 body {
     font-family: sans-serif;
-    color: var(--primary);    
+    color: var(--primary);
     overflow-x: hidden;
 }
 
-h1,h2 {
+h1,
+h2 {
     font-weight: normal;
 }
 
@@ -32,30 +37,34 @@ h1,h2 {
 
 
 /* Mobile Styles  */
-.site-nav{
+.site-nav {
     padding: 20px;
     padding-bottom: 10px;
 }
-.site-nav ul li:nth-child(-n+4){
+
+.site-nav ul li:nth-child(-n+4) {
     display: none;
 }
-.site-nav img{
+
+.site-nav img {
     grid-column: 1/3;
 }
-.site-nav ul{
+
+.site-nav ul {
     display: flex;
     grid-column: 6/9;
     align-items: center;
 }
 
-.site-nav ul li{
+.site-nav ul li {
     padding-left: 10px;
 }
+
 .site-nav a {
     color: var(--primary);
 }
 
-.top{
+.top {
     padding: 40px 20px;
     background-image: url(assests/top-section_2180x750.jpg);
     background-size: cover;
@@ -65,75 +74,77 @@ h1,h2 {
     text-align: center;
 }
 
-.top p{
+.top p {
     padding-bottom: 30px;
 }
 
-.top a{
+.top a {
     color: white;
     padding: 20px 40px;
     background-color: rgb(58, 74, 181);
 }
 
-#portfolio{
+#portfolio {
     padding: 20px;
 }
 
-#portfolio h1{
+#portfolio h1 {
     text-align: center;
 }
 
-.portfolio li{
+.portfolio li {
     grid-column: span 8;
     padding: 20px;
 }
 
-.portfolio li:nth-child(odd) .first{
+.portfolio li:nth-child(odd) .first {
     padding: 1px;
     border: 1px solid gray;
 }
 
-.portfolio div{
+.portfolio div {
     padding-top: 10px;
     display: flex;
     align-items: center;
 }
 
-.portfolio li div:last-child{
+.portfolio li div:last-child {
     background-color: rgb(214, 212, 212);
     color: black;
     margin-top: 5px;
     border-radius: 5px;
 }
-.price{
+
+.price {
     width: 20px;
     height: 20px;
 }
 
-.analytics{
+.analytics {
     font-size: 10px;
 }
 
-.portfolio li p{
+.portfolio li p {
     text-align: left;
 }
 
 
-#features{
+#features {
     padding: 20px;
 }
-#features h1{
+
+#features h1 {
     text-align: center;
     color: gray;
 }
 
-.features li img{
+.features li img {
     border: 2px solid rgba(82, 82, 82, 0.2);
     padding: 5px 5%;
     max-width: 95%;
 }
 
-.features li{
+.features li {
     grid-column: span 8;
     padding: 10px 0px;
     max-width: 60%;
@@ -141,15 +152,15 @@ h1,h2 {
     text-align: center;
 }
 
-#benefits{
+#benefits {
     padding: 20px;
 }
 
-#benefits h1{
+#benefits h1 {
     text-align: center;
 }
 
-.benefits li{
+.benefits li {
     padding: 30px 0px;
     grid-column: span 8;
     display: flex;
@@ -158,152 +169,190 @@ h1,h2 {
 }
 
 
-.benefits li img{
+.benefits li img {
     max-width: 88px;
     max-height: 88px;
     margin-top: 20px;
 }
 
-#benefits h1,h2{
-    color: rgba(0,0,0,0.8);
-} 
+#benefits h1,
+h2 {
+    color: rgba(0, 0, 0, 0.8);
+}
 
-#collection{
+#collection {
     padding: 20px;
 }
 
-#collection h1,p{
+#collection h1,
+p {
     text-align: center;
 }
 
-.collection h2{
+.collection h2 {
     grid-column: span 8;
+    color: white;
+    text-align: center;
+    padding: 80px;
+    max-width: 90%;
+    margin: 20px 5%;
 }
 
 .collection h2:first-child{
-    padding: 85px;
-    background-image: url(assests/collection-startup_920x368.png);
-    background-size: 100%;
-    background-position: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    color: white;
+    background-image: url(assests/collection-startup_460x184.png);
 }
 
 .collection h2:last-child{
-    padding: 85px;
-    background-image: url(assests/collection-ml_922x368.png);
-    background-size: 100%;
-    background-position: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    color: white;
+    background-image: url(assests/collection-ml_461x184.png);
 }
 
-#moreinfo{
+#moreinfo {
     padding: 40px 20px;
     background-color: rgba(214, 212, 212, 0.3);
 }
 
-#moreinfo h1{
+#moreinfo h1 {
     text-align: center;
 }
 
-.moreinfo-img img{
+.moreinfo-img img {
     grid-column: span 4;
     padding: 20px 0px;
 }
 
-.moreinfo-text{
+.moreinfo-img img:nth-child(even){
+    justify-self: end;
+}
+
+.moreinfo-text {
     display: flex;
     justify-content: center;
 }
 
-.moreinfo-text a{
+.moreinfo-text a {
     color: rgb(4, 146, 235);
     padding-left: 4px;
     padding-top: 10px;
 }
 
-#contact{
+#contact {
     padding: 30px 20px;
     text-align: center;
 }
 
-#contact h1{
-    color: rgba(0,0,0,0.8);
+#contact h1 {
+    color: rgba(0, 0, 0, 0.8);
 }
 
-.form{
+.form {
     display: flex;
     justify-content: center;
 }
 
-.form input,p{
+.form input,
+p {
     padding: 12px 5px;
 }
 
-.form input{
+.form input {
     min-width: 70%;
     color: rgb(183, 181, 181);
 }
 
-.form p{
+.form p {
     color: white;
     background-color: rgb(1, 110, 178);
 }
 
-#Splatforms{
+#Splatforms {
     padding: 40px 20px;
     background-color: rgba(214, 212, 212, 0.3);
 }
 
-#Splatforms h1{
+#Splatforms h1 {
     text-align: center;
     padding: 10px 0px;
 }
 
-.Splatforms{
+.Splatforms {
     padding: 10px 0px;
 }
 
-.Splatforms img{
+.Splatforms img {
     grid-column: span 4;
     padding: 10px 20%;
 }
 
-footer{
+footer {
     padding: 0px 20px;
-    background: linear-gradient(to bottom , rgb(40, 40, 40) 50%, black 50%);
+    background: linear-gradient(to bottom, rgb(40, 40, 40) 50%, black 50%);
 }
 
-footer a{
+footer a {
     color: rgb(4, 146, 235);
 }
 
-.links a img{
+.links a img {
     max-width: 15px;
     max-height: 15px;
 }
 
-.links{
+.links {
     font-size: 12px;
     justify-content: center;
     display: flex;
     padding-top: 20px;
 }
 
-.links a{
+.links a {
     padding: 0px 3px;
 }
 
+/* small tablets styles */
+@media screen and (min-width: 620px) {
+    .site-nav ul li:nth-child(4) {
+        display: flex;
+    }
+
+    .top{
+        font-size: 1em;
+    }
+
+    .portfolio li {
+        grid-column: 2/8;        
+    }
+
+    #portfolio p:last-child{
+        text-align: center;
+        margin: auto 40px;
+    }
 
 
+    #benefits h1{
+        font-size: 28px;
+    }
 
+    .benefits li {
+        padding: 30px 40px;
+    }
 
+    #collection p{
+        padding: 20px;
+    }
 
+    .moreinfo-img{
+        margin: auto 40px;
+    }
 
+    #contact{
+        padding-bottom: 40px;
+    }
+}
 
+/* Large tablets and laptops */
+@media screen and (min-width: 960px) {}
 
+/* Large laptops and Desktops */
+@media  screen and (min-width: 1200px) {
 
-
+}
