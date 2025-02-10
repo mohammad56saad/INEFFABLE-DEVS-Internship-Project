@@ -165,14 +165,20 @@ h2 {
     grid-column: span 8;
     display: flex;
     grid-gap: 20px;
-    text-align: center;
 }
 
+.benefits li div h2{
+    font-size: 20px;
+    margin: 0px auto;
+    margin-top: 10px;
+}
 
+.benefits li div p{
+    text-align: left;
+}
 .benefits li img {
     max-width: 88px;
     max-height: 88px;
-    margin-top: 20px;
 }
 
 #benefits h1,
@@ -399,10 +405,44 @@ footer a {
         grid-column: 3/7;
     }
 
-    .benefits li {
-        padding: 30px 60px;
+    .benefits li{
+        padding: 30px 120px;
+        grid-gap: 40px;
     }
 
+    .collection h2 {
+        grid-column: span 4;
+    }
+
+    .moreinfo-img{
+        grid-template-columns: repeat(9 , 1fr);
+    }
+
+    .moreinfo-img img:nth-child(even){
+    justify-self: center;
+    }
+
+    .moreinfo-img img {
+        grid-column: span 3;
+        justify-self: center;
+    }
+
+    #contact h1{
+        font-size: 28px;
+    }
+
+    .form{
+        max-width: 80%;
+        margin: auto 20%;
+    }
+
+    .Splatforms img {
+        grid-column: span 2;
+    }
+
+    #Splatforms {
+        padding: 40px 80px;
+    }
 }
 
 /* Large laptops and Desktops */
