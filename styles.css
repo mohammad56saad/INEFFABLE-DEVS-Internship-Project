@@ -276,6 +276,7 @@ p {
 }
 
 #Splatforms h1 {
+    font-weight: normal;
     text-align: center;
     padding: 10px 0px;
 }
@@ -456,6 +457,84 @@ footer a {
     }
 
     .top{
-        background-size: 120%;
+        background-size: 140%;
+        padding-bottom: 240px;
+    }
+
+    .top h1{
+        padding-top: 120px;
+    }
+
+    .top p {
+        padding-bottom: 50px;
+    }
+
+    .portfolio{
+        margin: auto 20px;
+    }
+
+    .Ending{
+        display: flex;
+        justify-content: center;
+    }
+        
+    .ending{
+        padding-top: 80px;
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .features{
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .features li{
+        grid-column: span 3;
+    }
+
+    .features li:last-child{
+        grid-column: 7/10;
+    }
+
+    .features li {
+        max-width: 100%;
+        margin: 0px;
+    }
+
+    .features li h2{
+        margin: 10px auto;
+    }
+
+    .features li p{
+        padding: 0;
+    }
+
+    .benefits li{
+        padding: 30px 300px;
+    }
+
+    .collection h2 {
+        grid-column: span 3;
+    }
+    
+
+    .collection h2:first-child{
+        grid-column: 2/5;
+    }
+
+    .collection h2:last-child{
+        grid-column: 5/8;
+    }
+
+    #collection p{
+        margin: auto 20%;
+    }
+
+    #Splatforms h1{
+        font-size: 32px;
+    }
+
+    .Splatforms{
+        margin: auto 10%;
     }
 }
